@@ -1,5 +1,5 @@
-"Kirjoita ohjelma, joka kysyy kolme kokonaislukua. "
-"Ohjelma tulostaa lukujen summan, tulon ja keskiarvon."
+#Kirjoita ohjelma, joka kysyy kolme kokonaislukua.
+#Ohjelma tulostaa lukujen summan, tulon ja keskiarvon.
 
 yksi = input("Anna ensimmäinen kokonaisluku: ")
 kaksi = input("Anna toinen kokonaisluku: ")
