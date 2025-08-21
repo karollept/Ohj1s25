@@ -4,11 +4,11 @@
 
 vuosi = float(input("Anna vuosiluku: "))
 
-if (vuosi % 4 == 0):
-    if (vuosi % 100 != 0):
+if vuosi % 4 == 0:
+    if vuosi % 100 != 0:
         print(f"Vuosi {vuosi:.0f} on karkausvuosi.")
 
-    elif (vuosi % 100 == 0 and vuosi % 400 == 0):
+    elif vuosi % 100 == 0 and vuosi % 400 == 0:
         print(f"Vuosi {vuosi:.0f} on karkausvuosi.")
 
     else:
