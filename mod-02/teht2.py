@@ -4,7 +4,7 @@
 import math
 
 pi = math.pi
-säde_str = input ("Anna ympyrän säde: ")
-säde = float(säde_str)
-pintaala = pi * säde ** 2
+sade_str = input ("Anna ympyrän säde: ")
+sade = float(sade_str)
+pintaala = pi * sade ** 2
 print(f"Ympyrän pinta-ala on {pintaala: .3f}")
