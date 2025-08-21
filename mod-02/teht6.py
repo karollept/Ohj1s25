@@ -4,7 +4,6 @@
 
 import random
 
-
 numero1 = random.randint(1, 9)
 numero2 = random.randint(1, 9)
 numero3 = random.randint(1, 9)
