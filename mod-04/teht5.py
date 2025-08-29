@@ -4,8 +4,8 @@
 # Edellisessä tapauksessa tulostetaan Tervetuloa ja jälkimmäisessä Pääsy evätty.
 # (Oikea käyttäjätunnus on python ja salasana rules).
 
-kauttaja = ("Mars")
-salasana = ("k4ks1&k0lm3")
+kauttaja = ("python")
+salasana = ("rules")
 
 
 kokeiltu = 0
@@ -22,6 +22,3 @@ while kokeiltu < mahdollisuuksia:
         kokeiltu = kokeiltu + 1
 else:
     print("Pääsy evätty")
-
-
-
