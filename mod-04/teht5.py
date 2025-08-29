@@ -14,7 +14,7 @@ mahdollisuuksia = 5
 while kokeiltu < mahdollisuuksia:
     kayttaja = input("Anna käyttäjätunnus: ")
     salesana = input("Anna salasana: ")
-    if kayttaja == kauttaja and salasana == salasana:
+    if kayttaja == kauttaja and salasana == salesana:
         print("Tervetuloa.")
         break
     else:
