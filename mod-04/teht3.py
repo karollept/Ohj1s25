@@ -10,7 +10,6 @@ while int(lukuja) % 1 == 0:
     if lukuja == "":
         break
 
-print(numeroja)
 
 print(f"Isoin luku oli {max(numeroja)}")
 print(f"Ja pienin luku oli {min(numeroja)}")
