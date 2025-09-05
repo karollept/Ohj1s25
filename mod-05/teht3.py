@@ -3,3 +3,19 @@
 
 #Esimerkiksi luku 13 on alkuluku, koska se voidaan jakaa vain luvuilla 1 ja 13 siten, että jako menee tasan.
 #Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan jakaa tasan myös luvulla 3 tai luvulla 7.
+
+luku = int(input("Anna luku "))
+if luku < 1:
+    print(f"{luku} ei ole alkuluku")
+else:
+    kokonaisluku = True
+    for n in range(2, luku):
+        if luku % n == 0:
+            kokonaisluku = False
+            break
+
+    if kokonaisluku:
+        print(f"{luku} on alkuluku")
+    else:
+        print(f"{luku} ei ole alkuluku")
+
