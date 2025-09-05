@@ -16,3 +16,4 @@ def litraa():
     return
 
 litraa()
+print("Ohjelma päättyy")
