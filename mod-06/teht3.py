@@ -6,12 +6,13 @@
 
 #Yksi gallona on 3,785 litraa.
 
-gallons = int(input("Anna bensiinin määrä in gallons: "))
-
 def litraa(gallon):
     litra = gallon * 3.785
     print(litra)
     return
+
+gallons = int(input("Anna bensiinin määrä in gallons: "))
+
 while gallons >= 0:
     litraa(gallons)
     gallons = int(input("Anna bensiinin määrä in gallons: "))
