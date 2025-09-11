@@ -45,5 +45,4 @@ while tehdaan != "3":
         kentat = haeLentokentta(koodi2)
         for kentta in kentat:
             print(f"Nimi: {kentta['name']}, ICAO: {kentta['ident']}")
-    tehdaan = input(
-        "Mitä haluat tehdä, haluatko 1. syöttää uuden lentoaseman, 2. hakea jo syötetyn lentoaseman tiedot vai 3. lopettaa ")
+    tehdaan = input("Mitä haluat tehdä, haluatko 1. syöttää uuden lentoaseman, 2. hakea jo syötetyn lentoaseman tiedot vai 3. lopettaa ")
