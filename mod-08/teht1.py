@@ -5,6 +5,15 @@
 
 import mysql.connector
 
+yhteys = mysql.connector.connect(
+    host='localhost',
+    port= 3306,
+    database='flight_game',
+    user='kartsu',
+    password='black_rose',
+    autocommit=True
+    )
+
 def lentokentät(icao):
     sql = f"SELECT name, municipality FROM airport WHERE ident =%s"
     kursori = yhteys.cursor(dictionary=True)
@@ -17,12 +26,3 @@ kentat = lentokentät(koodi)
 for kentta in kentat:
     print(f"Nimi: {kentta['name']}, ICAO: {kentta['municipality']}")
 
-
-yhteys = mysql.connector.connect(
-    host='localhost',
-    port= 3306,
-    database='flight_game',
-    user='kartsu',
-    password='black_rose',
-    autocommit=True
-    )
