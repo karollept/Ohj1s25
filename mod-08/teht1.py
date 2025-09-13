@@ -14,7 +14,7 @@ yhteys = mysql.connector.connect(
     autocommit=True
     )
 
-def lentokentät(icao):
+def lentokentat(icao):
     sql = f"SELECT name, municipality FROM airport WHERE ident =%s"
     kursori = yhteys.cursor(dictionary=True)
     kursori.execute(sql, (icao,))
@@ -22,7 +22,7 @@ def lentokentät(icao):
     return tulos
 
 koodi = input("syötä lentoaseman ICAO-koodi: ")
-kentat = lentokentät(koodi)
+kentat = lentokentat(koodi)
 for kentta in kentat:
     print(f"Nimi: {kentta['name']}, ICAO: {kentta['municipality']}")
 
